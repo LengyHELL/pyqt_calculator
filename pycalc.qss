@@ -1,0 +1,7 @@
+QLineEdit {
+    border-radius: 5px;
+}
+
+QLineEdit:focus {
+    border: 1px solid palette(highlight);
+}

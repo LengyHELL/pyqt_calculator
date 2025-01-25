@@ -120,6 +120,9 @@ class PyCalc:
 def main():
     """Main function"""
     pycalcApp = QApplication(sys.argv)
+    with open("pycalc.qss", "r", encoding="utf-8") as styles:
+        pycalcApp.setStyleSheet(styles.read())
+
     pycalcWindow = PyCalcWindow()
     pycalcWindow.show()
     PyCalc(evaluateExpression, pycalcWindow)
